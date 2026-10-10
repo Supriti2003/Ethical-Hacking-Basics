@@ -1,0 +1,22 @@
+check if target working on not
+------------------------------------------
+nmap -sn 10.19.244.191
+ping targetip: same as -sn
+
+port scanning
+-------------------------------
+nmap -n -p 21,23,80,443(port numbers) 192.168.70.128
+nmap -n -p 1-500 192.168.70.128  (scan 1-500 ports)
+nmap -p- 192.168.70.128 (scan all ports,65535)
+
+version scanning
+--------------------------------
+nmap -p 1-500 -sV 192.168.70.128  
+
+scan operating system
+--------------------------------
+sudo nmap -O 192.168.70.128
+
+
+
+
