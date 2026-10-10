@@ -1,0 +1,30 @@
+BELLINGCAT
+GOOGLE EARTH
+
+USE EXIF TOOLS TO GET METADATA-----------------
+
+image osint---------------------------------------------
+
+exiftool photo.jpg (get image info)
+exiftool -GPSLatitude -GPSLongitude ~/Downloads/photo2.jpg
+
+google image
+tineye.com: image history
+FotoForensics.com: detect edited/fake images
+exiftool: cli based metadata extractor
+facecheck.id: check if photo uploaded anywhere in web
+
+geolocation osint-----------------------------------
+
+git clone, seeker, raven: python seeker.py, python r4ven.py
+
+suncalc: sun calc
+google street view
+mapillary: crowd sourced street image
+geospy: track environmental features
+exiftool: if image has gps hidden
+twitter advanced search: filter tweets by place
+geoguesser: sharpen geo-location brain
+
+
+
