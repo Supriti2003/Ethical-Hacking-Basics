@@ -1,0 +1,184 @@
+sudo apt update : update the kali Linux (super user do, advanced package tool)
+sudo apt upgrade: upgrade the updated tools
+take snapshot: to let kali know there's some issue
+pwd(print working directory): to check present working directory
+ls: list down files/directories under present directory 
+(colour blue: directories, others: files
+ls -la: shows hidden files
+
+
+//-------------------------------------------------------------
+cd: change working directories
+cd /: to reach or to move to root directory
+cd .. : to move to previous dir of current dir
+cd ~ : to move to home folder
+
+mkdir folder: create new dir/folder
+touch file.txt: to create new file
+cp file destpath: copy a file
+move file destpath: move or 
+rename a file: (mv oldname newname)
+rm file: delete a file
+rm -r foldername: delete a folder/dir
+
+//--------------------------------------------------------------
+
+cat file.txt: print entire file/open folder
+grep -r "LINE 10" ~/Desktop: print data by transferring dir by its name
+
+less file.txt: scroll through file
+head file.txt: show first 10 lines
+head -n 5 file.txt
+tail file.txt: show last 10 lines 
+tail -n 5 file.txt
+tail -f file.txt: live file monitoring
+
+//--------------------------------------------------------------
+
+nano filename: to write on a file
+ctrl+o: save
+enter key to confirm
+ctrl+x: exit nano
+ctrl+k: cut line
+
+vim filename: for advance users
+gedit file.txt: GUI editor
+
+//---------------------------------------------------------
+grep "word" file.txt: search for a word but case sesitive
+grep -i "word" file.txt: case insensitive search
+grep -r "word" /path: search inside all files in a folder
+grep -n "word" file.txt: show matching line number and word(case sensitive)
+
+
+//--------------------------------------------------------
+ctrl+c: to terminate sudo update process.
+/etc/shadow: store password hashes
+/etc/passwd: stores user info/view all users using cat)
+//---------------------------------------------------------
+
+
+whoami: show current user
+id: show user id group
+sudo command: run as root...super user do (sudo su)
+su username: switch user (su root)
+passwd: change your password
+//------------------------------------------------------------
+
+
+adduser SUPRITI: to add new user
+sudo adduser SUPRITI (after fatal error)
+passwd SUPRITI: to set password for user
+usermod -aG sudo SUPRITI: give sudo access 
+deluser: delete an user
+sudo deluser SUPRITI: to delete user after creation.
+cat /etc/passwd: stores user info (view all users using cat).
+kali          → username
+1000          → user ID (UID)
+/home/kali    → home directory
+/usr/bin/zsh  → login shell
+
+//----------------------------------------------------------
+
+groupadd groupname: create a new group
+usermod -ag groupname SUPRITI: add supriti to a group
+groups Supriti: to see the groups user joined in.
+cat /etc/group: view all existing groups
+
+usermod → modify a user
+-a → add (keep existing groups)
+-G → specify the group
+
+//--------------------------------------------------------
+
+UNDERSTANDING FILE PERMISSION
+
+Every file has 3 permission set, such as: owner,group,others
+owner can read and write and execute file
+group can read and execute file
+others can read the file only
+
+operations in file: read(r), write(w), execute(x);
+
+example: -rwxr-xr--
+owner= rwx full access
+group= r-x read+execute
+others= r read only
+
+//-------------------------------------------------
+
+chmod: changing permission
+user u,group g, others o
+
+read=4,write=2,execute 1...(total 7)(group 5)(others 5)
+chmod 755 fileName: user,grp,others
+
+//---------------------------------------------------
+chown user file: change owner
+chown user:group file: change owner & group
+chown -R user folder: change recursively(entire folder) 
+
+//------------------------------------------------------
+
+DISK USAGE COMMANDS
+
+df -h: show total disk space
+du -sh folder: show size of a folder
+lsblk: list disks and partition
+fdisk -1: details disk info(sudo)
+
+//--------------------------------------------------
+ip a: show ip address
+ifconfig: show network interfaces
+ping google.com: test internet connection
+
+//-------------------------------------------------
+APT PACKAGE MANAGER
+
+apt update: refresh package list
+apt upgrade: upgrade all package
+apt install tool: install a package 
+apt remove tool: remove a package
+apt search tool: search for a package
+
+//-----------------------------------------------------
+tar -cvf file.tar folder : create archive
+tar -xvf file.tar : extract archive
+
+//MUST KNOIWN BEGINNERS TOOLS
+
+nmap= network scanning
+Wireshark= packet capture and analysis
+Metasploit= exploitation framework
+Burp Suite= web app security testing
+Jhon the Ripper= password cracking
+Aircrack -ng= wireless security testing
+
+
+----------------------------------nmap
+nmap 192.168.70.128 (own device thinkpad)
+
+nmap -p 80,443 -sV 192.168.70.254
+Meaning:
+-p → specify ports
+80,443 → scan ports 80 and 443
+-sV → detect service/version
+192.168.70.254 → target IP
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
