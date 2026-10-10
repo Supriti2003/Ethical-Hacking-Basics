@@ -1,0 +1,42 @@
+RECONNAISSANCE(active,passive) techniques
+
+find domain related permission
+---------------------------------------------------
+whois
+whois domainname/targetname or (whois) on browser
+
+nslookup(Name Server Lookup)----------------------
+nslookup domainname/targetname or (mxtoolbox)
+
+SOCIAL ENGINEERING
+------------------------------------------
+social searcher: use to identify social media account
+mailmeteor: find mail add from linkedin
+wappalyzer- extension to find the tech used in it.
+
+SUBDOMAIN ENUMERATION TECHNIQUE
+---------------------------------------------------------------
+subdomainfoinder: find subdomain related to domain
+subfinder -d tesla.com -o subdom.txt (find and save in file)
+find total subdom numb: subfinder -d tesla.com | wc -l
+
+DIRECTORY ENUMERATIUON
+---------------------------------------------------------------
+gobuster dir -u http://testfire.net -w /usr/share/wordlists/dirb/common.txt
+
+----------------------------------------------------------------
+shodan- get hardware/iots servers info
+Exif metadata analysis: (exifinfo.org) metadata of any image and fetching useful info like gps coordinates
+osint: find publicly available info
+
+
+google dorking: its like google search but more advanced. in browser: "hacking book", site:defronix.com .
+intitle: ethical hacking, inurl: ethical hacking
+"bug bounty" -"hackerone": eliminate result by keyword.
+tool: ghdb: exploit database,find elements by dorking commands
+----------------------------------------------------------------
+
+
+
+
+
